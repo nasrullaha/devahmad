@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Films</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+<ion-list>
+  <button ion-item *ngFor="let z of (a | async)?.results" (click)="openDetails(film)">
+    {{ z.id }}
+  </button>
+</ion-list>
+ 
+</ion-content>
